@@ -48,14 +48,13 @@ export const getPostsAsync =
     const { page, hasMore } = getState().posts;
 
     // No more posts
-    if (!hasMore) {
-      return;
-    }
+    if (!hasMore) return;
     dispatch(setPostsLoading({ value: true }));
 
     // Get new posts
     const resp = await getPostsService(page);
 
+    // Dispatch actions together to prevent unneeded re-renders
     batch(() => {
       dispatch(setPostsPage({ value: page + 1 }));
       dispatch(setHasMorePosts({ value: resp.meta.hasMore }));
@@ -71,6 +70,7 @@ export const getLatestPostsAsync =
     // Get new posts
     const resp = await getPostsService(1);
 
+    // Dispatch actions together to prevent unneeded re-renders
     batch(() => {
       dispatch(setPostsPage({ value: 2 }));
       dispatch(setHasMorePosts({ value: resp.meta.hasMore }));
