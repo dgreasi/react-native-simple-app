@@ -45,7 +45,6 @@ export const postsSlice = createSlice({
 export const getPostsAsync =
   (): AppThunk =>
   async (dispatch: AppDispatch, getState: () => RootStoreInterface): Promise<void> => {
-    console.log('getPostsAsync getPostsAsync getPostsAsync');
     const { page, hasMore } = getState().posts;
 
     // No more posts
@@ -68,7 +67,6 @@ export const getPostsAsync =
 export const getLatestPostsAsync =
   (): AppThunk =>
   async (dispatch: AppDispatch): Promise<void> => {
-    console.log('getLatestPostsAsync getLatestPostsAsync');
     dispatch(setIsRefetching({ value: true }));
     // Get new posts
     const resp = await getPostsService(1);

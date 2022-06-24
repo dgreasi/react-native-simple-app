@@ -14,9 +14,7 @@ const simulateRequest = async (page: number): Promise<IGetPostsResponse> => {
   await sleep(2000);
 
   const postsLength = posts.length;
-  console.log('postsLength: ', postsLength);
   const maxPage = Math.ceil(postsLength / LIMIT);
-  console.log('maxPage: ', maxPage);
 
   // Invalid page argument
   if (page > maxPage) {
@@ -32,8 +30,6 @@ const simulateRequest = async (page: number): Promise<IGetPostsResponse> => {
   // Page is valid
   const startOfPage = page * LIMIT - LIMIT;
   const endOfPage = page * LIMIT;
-  console.log('startOfPage: ', startOfPage);
-  console.log('endOfPage: ', endOfPage);
   const postsOfPage = posts.slice(startOfPage, endOfPage);
 
   return {

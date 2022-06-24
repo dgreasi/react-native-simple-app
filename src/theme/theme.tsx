@@ -1,3 +1,9 @@
+export const WEIGHT = {
+  REGULAR: { 'font-weight': '400' },
+  MEDIUM: { 'font-weight': '600' },
+  BOLD: { 'font-weight': '700' },
+};
+
 const theme = {
   colors: {
     primary: '#04060A',
@@ -22,6 +28,7 @@ const theme = {
     ml: 12,
     l: 25,
     xl: 75,
+    xxl: 100,
   },
 };
 

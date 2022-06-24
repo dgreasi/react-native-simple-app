@@ -6,7 +6,23 @@ export const authors: IAuthor[] = [
     name: 'Jane Austen',
     img: 'https://149645218.v2.pressablecdn.com/wp-content/uploads/2020/09/7.jpg',
     description:
-      'The Jane Austen Centre’s website states: ‘Jane Austen is perhaps the best known and best loved of Bath’s many famous residents and visitors.’ One wonders at the restraint in that, considering that Jane Austen is indisputably one of the greatest English writers – some say the greatest after Shakespeare – and certainly the greatest English novelist and one of the most famous English women who ever lived. Read the best Jane Austin quotes.',
+      'The Jane Austen Centre’s website states: ‘Jane Austen is perhaps the best known and best loved of Bath’s many famous residents and visitors.’ One wonders at the restraint in that, considering that Jane Austen is indisputably one of the greatest English writers – some say the greatest after Shakespeare – and certainly the greatest English novelist and one of the most famous English women who ever lived. Read the best Jane Austin quotes. One has to ask why it is that her novels have lasted and are still widely read. One thing is certain: when one settles down with a Jane Austen novel one can be sure that there are going to be hours of pleasure and a lot of chuckling.\n' +
+      '\n' +
+      'Jane Austen prods away at the social conventions of her time and how they fashion and condition the English landed gentry, the people she socialised with and whom she observed closely. She reveals the little preoccupations and concerns of the ladies and the gentlemen and the young women in those circles, and she leads us to laugh at them. Sometimes the goading is gentle and sometimes it’s savage. And every novel tells a gripping story, full of tension, with mysteries where we are kept waiting for their final resolution, when everything falls into place – very much like the best detective novels of our time.\n' +
+      '\n' +
+      'As with Shakespeare, Chaucer and Dickens, the other main English humourists,  her characters are highly memorable. We all know Elizabeth Bennett and Mr Darcy, Emma Woodhouse and Mr Knightly, and poor little Catherine Morland. And on another level, the immortal comic characters led by Mrs Bennett and including Sir Walter Elliot, Mr Collins, Mrs Elton and Mr Woodhouse, among many others.\n' +
+      '\n' +
+      'It is difficult to pin down what it is that Jane Austen does with language to create that combination of humour and penetrating insight. It has something to do with the way she constructs sentences – all perfectly balanced and often with a sting in the tail, and a style of narration in which the variety of points of view of the different characters tell the story. It is perhaps that latter characteristic that makes her such a modern writer – indeed, a postmodern writer – as her stories are usually told with her pretending to be the narrator, but she is not, and we fall into the trap of taking her narrator seriously. With that narrative style she is able to reveal and ridicule the manners of her society.\n' +
+      '\n' +
+      'Her novels always have a young woman at their centre – a young woman with romantic dreams and hopes about meeting and marrying her perfect man. The heroine always does, although only after a  series of ups and downs, near misses and multiple misunderstandings.\n' +
+      '\n' +
+      'On the surface, the novels resemble modern romantic boy-meets-girl fiction or ‘chicklit.’ Jane Austen uses that plot but her exploration of people, their class and their community while doing so goes very far beyond the novels that are read for their romantic story alone.\n' +
+      '\n' +
+      'We have an image of Jane Austen as a spinster who lived quietly with her mother and sister and wrote her novels in semi-secrecy, hiding her pages away if she heard anyone approaching while she was writing. Most of what we know about her was written by family members after her death and so we know only the sweet, quiet, ‘Aunt Jane.’ Someone with her intelligence and sharpness must have been much more than that.\n' +
+      '\n' +
+      'She was the daughter of George Austen, the vicar of the Anglican parish of Steventon in Hampshire. She had six brothers and one sister, Cassandra, to whom she was very close. The family did not have enough money to send her to school so she was educated at home, where she read a great deal, directed by her father and brothers Henry and James. She also experimented with writing little stories from early childhood and one can still read her juvenilia, which has been collected by various editors.\n' +
+      '\n' +
+      'Jane Austen died on 18th July 1817 at the age of 41. We do not have an accurate diagnosis of the cause of her death but medical researchers think it may have been the rare disease, Addison’s disease of the suprarenal glands.',
   },
   {
     name: 'William Blake',
@@ -55,7 +71,18 @@ export const posts: IPost[] = [
   {
     id: 2,
     author: authors[1],
-    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    body:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n' +
+      '\n' +
+      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n' +
+      '\n' +
+      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \n' +
+      '\n' +
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n' +
+      '\n' +
+      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n' +
+      '\n' +
+      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \n',
   },
   {
     id: 3,

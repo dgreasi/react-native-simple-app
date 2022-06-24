@@ -2,13 +2,13 @@ import React, { memo } from 'react';
 import { IPost } from '~interfaces/post.interface';
 import { CARD_WIDTH_FULL } from '~config/constants';
 import theme from '~theme/theme';
-import Animated, { FadeIn, Layout } from 'react-native-reanimated';
 import { MAIN_ROUTES } from '~navigation/Main/mainTypes';
 import PostCardAuthor from '~screens/Home/components/PostCardAuthor';
 import { ParamListBase, useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import PostCardBody from '~screens/Home/components/PostCardBody';
 import styled from 'styled-components/native';
+import Animated, { FadeIn, Layout } from 'react-native-reanimated';
 
 interface Props {
   post: IPost;
@@ -31,7 +31,7 @@ const PostCard = ({ post, index, firstLoad }: Props) => {
   const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
 
   const onPressCard = () => {
-    navigation.navigate(MAIN_ROUTES.POST);
+    navigation.navigate(MAIN_ROUTES.POST, { post });
   };
 
   return (

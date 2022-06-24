@@ -13,6 +13,8 @@ All notable changes to this project will be documented in this file.
 
 ### Features
 
+- (**RN**) Fix bug of reanimated and react-navigation on android.
+- (**RN**) Add react-native-device-info.
 - (**RN**) Infinite scroll view with dummy data on redux.
 - (**RN**) Add styled-components.
 - (**RN**) Add react-native-reanimated for animations.

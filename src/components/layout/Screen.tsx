@@ -2,14 +2,8 @@ import React from 'react';
 import { StatusBar, StatusBarStyle } from 'react-native';
 import theme from '~theme/theme';
 import styled from 'styled-components/native';
-
-type Props = {
-  children: React.ReactNode;
-  full?: boolean;
-  testID?: string;
-  paddingTop?: boolean;
-  barStyle?: StatusBarStyle;
-};
+import { isAndroid } from '~utils/deviceInfo';
+import { useHeaderHeight } from '@react-navigation/elements';
 
 const ViewStyled = styled.View`
   flex-direction: column;
@@ -23,13 +17,28 @@ const ViewStyled = styled.View`
   ${(props: any) =>
     props.paddingTop &&
     `
-    padding-top: 24px;
+    padding-top: ${props.paddingTop}px;
   `}
 `;
 
-export const Screen = ({ children, full, testID, paddingTop, barStyle }: Props) => (
-  <ViewStyled testID={testID} full={full} paddingTop={paddingTop}>
-    <StatusBar translucent backgroundColor="transparent" barStyle={barStyle || 'dark-content'} />
-    {children}
-  </ViewStyled>
-);
+interface Props {
+  children: React.ReactNode;
+  full?: boolean;
+  testID?: string;
+  paddingTop?: number;
+  barStyle?: StatusBarStyle;
+}
+
+export const Screen = ({ children, full, testID, paddingTop, barStyle }: Props) => {
+  // Bug of react-navigation 6 and reanimated
+  // Issue: https://github.com/software-mansion/react-native-reanimated/issues/2906
+  const headerHeight = useHeaderHeight();
+  const fixAndroidPaddingTop = isAndroid ? headerHeight : 0;
+
+  return (
+    <ViewStyled testID={testID} full={full} paddingTop={fixAndroidPaddingTop || paddingTop}>
+      <StatusBar translucent backgroundColor="transparent" barStyle={barStyle || 'dark-content'} />
+      {children}
+    </ViewStyled>
+  );
+};

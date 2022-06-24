@@ -32,6 +32,7 @@ const SeparatorView = styled.View`
 const FlatListStyled = styled.FlatList.attrs(() => ({
   contentContainerStyle: {
     alignItems: 'center',
+    paddingBottom: 20,
   },
 }))``;
 

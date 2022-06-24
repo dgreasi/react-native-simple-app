@@ -1,3 +1,6 @@
+import { IPost } from '~interfaces/post.interface';
+import { IAuthor } from '~interfaces/author.interface';
+
 export enum MAIN_ROUTES {
   HOME = 'Home',
   POST = 'Post',
@@ -6,6 +9,6 @@ export enum MAIN_ROUTES {
 
 export type MainRoutes = {
   Home: undefined;
-  Post: undefined;
-  Profile: undefined;
+  Post: { post: IPost };
+  Profile: { author: IAuthor };
 };

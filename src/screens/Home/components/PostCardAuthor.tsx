@@ -1,13 +1,14 @@
 import React from 'react';
 import { IAuthor } from '~interfaces/author.interface';
 import { ImageWithFallback } from '~components';
-import { Text, TouchableOpacity } from 'react-native';
+import { TouchableOpacity } from 'react-native';
 import { ParamListBase, useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { MAIN_ROUTES } from '~navigation/Main/mainTypes';
 import theme from '~theme/theme';
 import { IMAGE_IN_LIST } from '~config/constants';
 import styled from 'styled-components/native';
+import { TextStyled } from '~theme/shared';
 
 interface Props {
   author: IAuthor;
@@ -35,7 +36,7 @@ const PostCardAuthor = ({ author }: Props) => {
   const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
 
   const onPress = () => {
-    navigation.navigate(MAIN_ROUTES.PROFILE);
+    navigation.navigate(MAIN_ROUTES.PROFILE, { author });
   };
 
   return (
@@ -44,7 +45,7 @@ const PostCardAuthor = ({ author }: Props) => {
         <ImageWithFallbackStyled source={{ uri: author.img }} />
       </TouchableOpacity>
       <TouchableAuthorName onPress={onPress} activeOpacity={0.5}>
-        <Text>{author.name}</Text>
+        <TextStyled>{author.name}</TextStyled>
       </TouchableAuthorName>
     </Container>
   );
