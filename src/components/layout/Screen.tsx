@@ -1,6 +1,7 @@
 import React from 'react';
-import { StatusBar, StatusBarStyle, StyleSheet, View } from 'react-native';
+import { StatusBar, StatusBarStyle } from 'react-native';
 import theme from '~theme/theme';
+import styled from 'styled-components/native';
 
 type Props = {
   children: React.ReactNode;
@@ -10,26 +11,25 @@ type Props = {
   barStyle?: StatusBarStyle;
 };
 
+const ViewStyled = styled.View`
+  flex-direction: column;
+  flex: 1;
+  background-color: ${theme.colors.background};
+  ${(props: any) =>
+    !props.full &&
+    `
+    padding-horizontal: 16px;
+  `}
+  ${(props: any) =>
+    props.paddingTop &&
+    `
+    padding-top: 24px;
+  `}
+`;
+
 export const Screen = ({ children, full, testID, paddingTop, barStyle }: Props) => (
-  <View
-    testID={testID}
-    style={[
-      styles.container,
-      full ? undefined : { paddingHorizontal: 16 },
-      paddingTop ? { paddingTop: 24 } : undefined,
-    ]}>
+  <ViewStyled testID={testID} full={full} paddingTop={paddingTop}>
     <StatusBar translucent backgroundColor="transparent" barStyle={barStyle || 'dark-content'} />
     {children}
-  </View>
+  </ViewStyled>
 );
-
-const styles = StyleSheet.create({
-  background: {
-    backgroundColor: theme.colors.backgroundColor,
-  },
-  container: {
-    flexDirection: 'column',
-    flex: 1,
-    backgroundColor: theme.colors.backgroundColor,
-  },
-});

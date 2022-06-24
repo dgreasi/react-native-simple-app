@@ -13,6 +13,8 @@ All notable changes to this project will be documented in this file.
 
 ### Features
 
+- (**RN**) Add styled-components.
+- (**RN**) Add react-native-reanimated for animations.
 - (**RN**) Setup basic navigation.
 - (**RN**) Setup redux toolkit with 2 basic slices (core, posts).
 - (**RN**) Install flipper for react, network, redux debugging.
