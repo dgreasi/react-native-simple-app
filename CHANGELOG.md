@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [TODOS]
 
 - (**RN**) Update reanimated lib when bug is fixed on android.
+  - Issue: https://github.com/software-mansion/react-native-reanimated/issues/2906
 - (**RN**) Install react-native-flash-message for 'info', 'error' alerts.
 - (**RN**) Install @gorhom/bottom-sheet to use actions bottom sheet.
 - (**RN**) Install @react-native-community/netinfo to check for internet connection before requests.
