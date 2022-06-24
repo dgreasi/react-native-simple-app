@@ -13,6 +13,7 @@ All notable changes to this project will be documented in this file.
 
 ### Features
 
+- (**RN**) Infinite scroll view with dummy data on redux.
 - (**RN**) Add styled-components.
 - (**RN**) Add react-native-reanimated for animations.
 - (**RN**) Setup basic navigation.

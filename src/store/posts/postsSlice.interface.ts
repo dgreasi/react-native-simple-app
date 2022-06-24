@@ -1,6 +1,11 @@
+import { IPost } from '~interfaces/post.interface';
+
 export interface IPostsState {
   loading: boolean;
-  posts: any[];
+  posts: IPost[];
+  page: number;
+  hasMore: boolean;
+  isRefetching: boolean;
 }
 
 export interface IPostsSlice {
@@ -8,5 +13,5 @@ export interface IPostsSlice {
 }
 
 export interface SetPostsPayload {
-  posts: any[];
+  posts: IPost[];
 }
