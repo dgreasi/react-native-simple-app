@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## [TODOS]
 
+- (**RN**) Update reanimated lib when bug is fixed on android.
 - (**RN**) Install react-native-flash-message for 'info', 'error' alerts.
 - (**RN**) Install @gorhom/bottom-sheet to use actions bottom sheet.
 - (**RN**) Install @react-native-community/netinfo to check for internet connection before requests.
@@ -13,6 +14,7 @@ All notable changes to this project will be documented in this file.
 
 ### Features
 
+- (**RN**) Implement final Post, Profile screens.
 - (**RN**) Fix bug of reanimated and react-navigation on android.
 - (**RN**) Add react-native-device-info.
 - (**RN**) Infinite scroll view with dummy data on redux.
