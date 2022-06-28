@@ -1,5 +1,8 @@
 # react-native-simple-app
-A simple react native project
+A simple react native project that consists of:
+1) A home page with a list of 'posts', with the infinite scroll view and drag to refresh capability.
+2) Click the post to navigate to the post's page.
+3) Click the author's name or photo to navigate to author's profile page.
 
 ## Environment
 ```shell
