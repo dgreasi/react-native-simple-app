@@ -33,4 +33,4 @@ yarn ios # Will run application to latest iPhone simulator
 ### Refresh
 ![Refresh](screenshots/3.png)
 ### Infinite scroll - Get next page
-![Next page](screenshots/3.png)
+![Next page](screenshots/4.png)
