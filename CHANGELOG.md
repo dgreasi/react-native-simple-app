@@ -4,7 +4,6 @@ All notable changes to this project will be documented in this file.
 
 ## [TODOS]
 
-- (**RN**) Update android native setup
 - (**RN**) Install react-native-flash-message for 'info', 'error' alerts.
 - (**RN**) Install @gorhom/bottom-sheet to use actions bottom sheet.
 - (**RN**) Install @react-native-community/netinfo to check for internet connection before requests.
@@ -16,7 +15,7 @@ All notable changes to this project will be documented in this file.
 ### Features
 
 - (**RN**) Update react to `v18.2.0`.
-- (**RN**) Update react-native to `v0.71.11`.
+- (**RN**) Update react-native to `v0.71.11`, update native setups for iOS, Android.
 - (**RN**) Update react-native-reanimated to `v3.3.0`.
 - (**RN**) Update react-native-safe-area-context to `v4.5.3`.
 - (**RN**) Update react-native-screens to `v3.21.0`.
