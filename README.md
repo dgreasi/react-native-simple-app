@@ -23,3 +23,14 @@ npm install --global yarn # Or use npx before each yarn command
 yarn clean-start
 yarn ios # Will run application to latest iPhone simulator
 ```
+
+## App functionality
+
+### Home screen
+![Home screen](screenshots/1.png)
+### Profile screen
+![Profile screen](screenshots/2.png)
+### Refresh
+![Refresh](screenshots/3.png)
+### Infinite scroll - Get next page
+![Next page](screenshots/3.png)
